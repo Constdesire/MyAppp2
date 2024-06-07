@@ -37,14 +37,16 @@ import com.example.myapp.viewModel.PessoaViewModel
 import com.example.myapp.viewModel.Repository
 
 class MainActivity : ComponentActivity() {
+    // Inicialização do banco de dados usando Room
     private  val db by lazy {
         Room.databaseBuilder(
-            applicationContext,
+            applicationContext, 
             PessoaDataBase::class.java,
-            "pessoa.db"
-        ).build()
+            "pessoa.db" // Nome do banco de dados
+        ).build() // Construção do banco de dados
     }
 
+    // Inicialização do ViewModel
     private val viewModel by viewModels<PessoaViewModel>(
         factoryProducer = {
             object : ViewModelProvider.Factory{
@@ -54,6 +56,8 @@ class MainActivity : ComponentActivity() {
             }
         }
     )
+}
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
