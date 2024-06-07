@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
     entities = [Pessoa::class], // Lista de entidades 
     version = 1 // Versão
 )
-// Classe abstrata que estende RoomDatabase e abaixo fornece acesso ao DAO 
+// Classe que estende RoomDatabase e abaixo fornece acesso ao DAO 
 abstract class PessoaDataBase: RoomDatabase() { 
 
     abstract fun pessoaDao(): PessoaDao 
