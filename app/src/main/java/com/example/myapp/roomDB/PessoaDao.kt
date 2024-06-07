@@ -6,7 +6,7 @@ import androidx.room.Query
 import androidx.room.Upsert
 import kotlinx.coroutines.flow.Flow
 
-@Dao // Esta interface é marcada como um Data Access Object (DAO), que fornece métodos para acessar e manipular dados na base de dados Room
+@Dao // acessar e manipular dados na base de dados Room
 interface PessoaDao {
 // atualiza ou insere uma entidade no banco de dados
     @Upsert 
