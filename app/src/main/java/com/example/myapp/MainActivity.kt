@@ -87,13 +87,13 @@ fun App(viewModel: PessoaViewModel){
     )
 
 
-//================================
+//============Cor da pagina de fundo====================
     Column(
         Modifier
             .background(Color.White)
     ) {
 
-//================================
+//===========Inicio da pagina e titulo=====================
         Row(
             Modifier
                 .background(Color.White)
@@ -109,7 +109,7 @@ fun App(viewModel: PessoaViewModel){
 
         }
 
-//================================
+//===========Primeiro bloco de formulario com a variavel "nome"=====================
         Row(
             Modifier
                 .padding(20.dp)
@@ -128,7 +128,7 @@ fun App(viewModel: PessoaViewModel){
             )
         }
 
-//===============================
+//============Segundo bloco do formulario com a variavel "telefone"===================
 
         Row(
             Modifier
@@ -149,8 +149,7 @@ fun App(viewModel: PessoaViewModel){
             )
         }
 
-//================================
-
+//=============Bloco do botão cadastrar inserindo as variaveis no banco pessoa===================
 
 //Button
         Row(
